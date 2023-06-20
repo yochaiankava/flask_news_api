@@ -16,7 +16,7 @@ class Article(db.Model):
     image = db.Column(db.String(100))
     category = db.Column(db.String(50), nullable=False)
 
-
+@app.route("/")
 @app.route("/article")
 @app.route("/article/<id>")
 def article(id=-1):
